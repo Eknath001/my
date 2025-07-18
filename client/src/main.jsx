@@ -15,7 +15,7 @@ import LoginPage from "./routes/LoginPage.jsx";
 import RegisterPage from "./routes/RegisterPage.jsx";
 import SinglePostPage from "./routes/SinglePostPage.jsx";
 import MainLayout from "./layouts/MainLayout.jsx";
-
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import ProtectedRoute from "./components/ProtectedRoute.jsx";
 
 import { ClerkProvider } from "@clerk/clerk-react";
@@ -68,5 +68,6 @@ createRoot(document.getElementById("root")).render(
         <ToastContainer position="bottom-right" />
       </QueryClientProvider>
     </ClerkProvider>
+    <SpeedInsights/>
   </StrictMode>
 );

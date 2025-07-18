@@ -2,7 +2,7 @@
   {
     "name": "Jane Doe",
     "role": "Founder & Lead Editor",
-    "image": "https://placehold.co/150x150/A3E635/ffffff?text=Avatar1",
+    "image": "successful-mature-businessman.jpg",
     "ringColor": "ring-purple-300 dark:ring-purple-600",
     "textColor": "text-purple-600 dark:text-purple-300",
     "description": "Passionate about storytelling and fostering a supportive community for writers."
@@ -10,7 +10,7 @@
   {
     "name": "John Smith",
     "role": "Community Manager",
-    "image": "https://placehold.co/150x150/A3E635/ffffff?text=Avatar2",
+    "image": "Community-Manager.jpg",
     "ringColor": "ring-teal-300 dark:ring-teal-600",
     "textColor": "text-teal-600 dark:text-teal-300",
     "description": "Dedicated to connecting readers and writers, making our blog a vibrant hub."
@@ -18,7 +18,7 @@
   {
     "name": "Emily White",
     "role": "Content Strategist",
-    "image": "https://placehold.co/150x150/A3E635/ffffff?text=Avatar3",
+    "image": "WHITE-EMILY.jpg",
     "ringColor": "ring-pink-300 dark:ring-pink-600",
     "textColor": "text-pink-600 dark:text-pink-300",
     "description": "Curating diverse and insightful content to keep our readers inspired and informed."

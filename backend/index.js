@@ -7,13 +7,19 @@ import webhookRouter from "./routes/webhook.route.js";
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { clerkMiddleware, requireAuth } from "@clerk/express";
 import cors from "cors";
-
+import path from "path";
+import { fileURLToPath } from "url";
 const app = express();
 
 app.use(cors(process.env.CLIENT_URL));
 app.use(clerkMiddleware());
 app.use("/webhooks", webhookRouter);
 app.use(express.json());
+
+// ✅ Fix __dirname for ES Modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const _dirname = path.resolve()
 
 app.use(function (req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -58,7 +64,7 @@ app.use((error, req, res, next) => {
     stack: error.stack,
   });
 });
-
+app.use(express.static(path.join(_dirname,"/frontend/dist")));
 /************************************************ */
 app.listen(3000, () => {
   connectDB();

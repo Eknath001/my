@@ -5,6 +5,14 @@ module.exports = {
   darkMode: 'class', // Enables dark mode with class strategy
 
   theme: {
+    container: {
+      center: true,
+      padding: '1rem',
+      screens: {
+        xl: "1280px",
+        "2xl": "1400px",
+      },
+    },
     extend: {
       keyframes: {
         'fade-in-down': {
